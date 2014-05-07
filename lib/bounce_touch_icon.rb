@@ -17,7 +17,7 @@ module BounceTouchIcon
     private
 
     def touch_icon_path?(path)
-      if path.match %r{\A/apple-touch-icon(-\d+x\d+)?(-precomposed)?\.png}
+      if path.to_s.match %r{\A/apple-touch-icon(-\d+x\d+)?(-precomposed)?\.png}
         true
       else
         false
